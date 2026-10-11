@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="boxBrass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbe38e"/>
+      <stop offset="50%" stop-color="#c89632"/>
+      <stop offset="100%" stop-color="#6e4b11"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#452b15"/>
+      <stop offset="100%" stop-color="#170d06"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgGlow)"/>
+  <!-- Decorative Brass Gears in Background -->
+  <circle cx="130" cy="120" r="65" fill="none" stroke="#5c3d1e" stroke-width="12" stroke-dasharray="16,10"/>
+  <circle cx="470" cy="330" r="75" fill="none" stroke="#5c3d1e" stroke-width="14" stroke-dasharray="18,12"/>
+  <!-- 3D Brass Puzzle Box -->
+  <polygon points="110,130 490,130 530,190 70,190" fill="#e6b84d" stroke="#2b1908" stroke-width="5"/>
+  <rect x="70" y="190" width="460" height="190" rx="8" fill="url(#boxBrass)" stroke="#2b1908" stroke-width="6"/>
+  <rect x="92" y="210" width="416" height="150" fill="#2b1908" stroke="#8c6732" stroke-width="4"/>
+  <!-- Compass Rose Engraving on Lid -->
+  <ellipse cx="300" cy="160" rx="90" ry="18" fill="#2b1908" stroke="#785616" stroke-width="3"/>
+  <text x="300" y="165" text-anchor="middle" fill="#fbe38e" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="4">WHITMORE Mk.IV</text>
+  <!-- 4 Symbol Tumblers -->
+  <g transform="translate(115, 235)">
+    <rect x="0" y="0" width="76" height="100" rx="6" fill="#422810" stroke="#fbe38e" stroke-width="3"/>
+    <text x="38" y="64" text-anchor="middle" fill="#fbe38e" font-size="42">★</text>
+  </g>
+  <g transform="translate(212, 235)">
+    <rect x="0" y="0" width="76" height="100" rx="6" fill="#422810" stroke="#fbe38e" stroke-width="3"/>
+    <text x="38" y="64" text-anchor="middle" fill="#fbe38e" font-size="42">☾</text>
+  </g>
+  <g transform="translate(310, 235)">
+    <rect x="0" y="0" width="76" height="100" rx="6" fill="#422810" stroke="#fbe38e" stroke-width="3"/>
+    <text x="38" y="64" text-anchor="middle" fill="#fbe38e" font-size="42">👁</text>
+  </g>
+  <g transform="translate(408, 235)">
+    <rect x="0" y="0" width="76" height="100" rx="6" fill="#422810" stroke="#fbe38e" stroke-width="3"/>
+    <text x="38" y="64" text-anchor="middle" fill="#fbe38e" font-size="42">▲</text>
+  </g>
+</svg>

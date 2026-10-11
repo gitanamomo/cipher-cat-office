@@ -9,8 +9,10 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={DetectiveGame} />
+      <Route path="/cipher-cat-office" component={DetectiveGame} />
+      <Route path="/cipher-cat-office/" component={DetectiveGame} />
       <Route path="/404" component={NotFound} />
-      <Route component={NotFound} />
+      <Route component={DetectiveGame} />
     </Switch>
   );
 }

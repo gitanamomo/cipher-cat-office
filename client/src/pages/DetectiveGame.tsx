@@ -10,12 +10,12 @@ import { ClueInspectorModal } from '@/components/ClueInspectorModal';
 import { DetectiveCatDialogue } from '@/components/DetectiveCatDialogue';
 import { FilmGrainOverlay } from '@/components/FilmGrainOverlay';
 
-// Uploaded asset storage URLs
+// Local SVG scene & prop illustrations (works on GitHub Pages & any subpath)
 const ASSETS = {
-  OFFICE: '/manus-storage/detective_office_scene_362ea1d3.png',
-  PUZZLE_BOX: '/manus-storage/mechanical_puzzle_box_2cd60e14.png',
-  CRYPTEX: '/manus-storage/steampunk_cryptex_ae567270.png',
-  CAT: '/manus-storage/detective_cat_572d83e6.png',
+  OFFICE: './manus-storage/detective_office_scene_362ea1d3.svg',
+  PUZZLE_BOX: './manus-storage/mechanical_puzzle_box_2cd60e14.svg',
+  CRYPTEX: './manus-storage/steampunk_cryptex_ae567270.svg',
+  CAT: './manus-storage/detective_cat_572d83e6.svg',
 };
 
 export const DetectiveGame: React.FC = () => {
@@ -402,6 +402,19 @@ export const DetectiveGame: React.FC = () => {
             <div className="w-full h-full rounded border-2 border-transparent group-hover:border-[#d4af37] group-hover:bg-[#d4af37]/20 transition-all flex items-end justify-center">
               <span className="opacity-0 group-hover:opacity-100 bg-[#2b190f] text-[#f5ebd7] text-[10px] font-bold px-1.5 py-0.5 rounded shadow border border-[#7a5232] translate-y-6">
                 {lang === 'zh' ? '侦探格言' : 'Inspect Motto'}
+              </span>
+            </div>
+          </button>
+
+          {/* Hotspot 2b: Antique Wall Clock (10:00) */}
+          <button
+            onClick={() => handleHotspotClick('wall_clock')}
+            title="Antique Wall Clock (10:00)"
+            className="absolute left-[27%] top-[8%] w-[5.5%] h-[13%] cursor-pointer group focus:outline-none"
+          >
+            <div className="w-full h-full rounded-full border-2 border-transparent group-hover:border-[#d4af37] group-hover:bg-[#d4af37]/20 transition-all flex items-end justify-center">
+              <span className="opacity-0 group-hover:opacity-100 bg-[#2b190f] text-[#f5ebd7] text-[10px] font-bold px-1.5 py-0.5 rounded shadow border border-[#7a5232] translate-y-6">
+                🕰 {lang === 'zh' ? '复古挂钟' : 'Wall Clock'}
               </span>
             </div>
           </button>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="cylBrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#78531a"/>
+      <stop offset="35%" stop-color="#fbe38e"/>
+      <stop offset="65%" stop-color="#c89632"/>
+      <stop offset="100%" stop-color="#4d330c"/>
+    </linearGradient>
+    <linearGradient id="ringIvory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9b79c"/>
+      <stop offset="50%" stop-color="#fff8eb"/>
+      <stop offset="100%" stop-color="#9c8669"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="#180f08"/>
+  <!-- Left & Right Steampunk End-Caps -->
+  <rect x="45" y="135" width="65" height="180" rx="14" fill="url(#cylBrass)" stroke="#241508" stroke-width="5"/>
+  <rect x="490" y="135" width="65" height="180" rx="14" fill="url(#cylBrass)" stroke="#241508" stroke-width="5"/>
+  <!-- Main Cylinder Body -->
+  <rect x="110" y="155" width="380" height="140" fill="url(#cylBrass)" stroke="#241508" stroke-width="5"/>
+  <!-- Red Alignment Bar -->
+  <line x1="95" y1="225" x2="505" y2="225" stroke="#dc2626" stroke-width="4"/>
+  <!-- 5 Rotating Alphabet Rings (L - U - X - O - R) -->
+  <g font-family="Courier, monospace" font-weight="bold" font-size="34" text-anchor="middle" fill="#7a2014">
+    <rect x="128" y="150" width="56" height="150" rx="4" fill="url(#ringIvory)" stroke="#3d2712" stroke-width="4"/>
+    <text x="156" y="236">L</text>
+    <rect x="200" y="150" width="56" height="150" rx="4" fill="url(#ringIvory)" stroke="#3d2712" stroke-width="4"/>
+    <text x="228" y="236">U</text>
+    <rect x="272" y="150" width="56" height="150" rx="4" fill="url(#ringIvory)" stroke="#3d2712" stroke-width="4"/>
+    <text x="300" y="236">X</text>
+    <rect x="344" y="150" width="56" height="150" rx="4" fill="url(#ringIvory)" stroke="#3d2712" stroke-width="4"/>
+    <text x="372" y="236">O</text>
+    <rect x="416" y="150" width="56" height="150" rx="4" fill="url(#ringIvory)" stroke="#3d2712" stroke-width="4"/>
+    <text x="444" y="236">R</text>
+  </g>
+  <text x="300" y="375" text-anchor="middle" fill="#d4af37" font-family="Georgia, serif" font-size="16" letter-spacing="3">ANCIENT EGYPTIAN CIPHER CYLINDER</text>
+</svg>

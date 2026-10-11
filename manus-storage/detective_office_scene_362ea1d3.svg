@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Noir Sepia Room Gradients -->
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c130c"/>
+      <stop offset="65%" stop-color="#2c1d12"/>
+      <stop offset="100%" stop-color="#191009"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#23150c"/>
+      <stop offset="100%" stop-color="#0f0905"/>
+    </linearGradient>
+    <linearGradient id="woodDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#472d18"/>
+      <stop offset="50%" stop-color="#331f10"/>
+      <stop offset="100%" stop-color="#211309"/>
+    </linearGradient>
+    <linearGradient id="woodDesk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5e3b1f"/>
+      <stop offset="25%" stop-color="#452b16"/>
+      <stop offset="100%" stop-color="#26170b"/>
+    </linearGradient>
+    <linearGradient id="brassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7df8b"/>
+      <stop offset="50%" stop-color="#c99b3b"/>
+      <stop offset="100%" stop-color="#785616"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f5659"/>
+      <stop offset="50%" stop-color="#2f3437"/>
+      <stop offset="100%" stop-color="#1a1d1f"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#d97706" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moonBeam" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#bae6fd" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ================= BACKGROUND WALL & WAINSCOTING ================= -->
+  <rect width="1600" height="640" fill="url(#wallGrad)"/>
+  <!-- Vintage striped wallpaper pattern -->
+  <g stroke="#3b2818" stroke-width="2" opacity="0.35">
+    <line x1="80" y1="0" x2="80" y2="520"/><line x1="160" y1="0" x2="160" y2="520"/>
+    <line x1="240" y1="0" x2="240" y2="520"/><line x1="320" y1="0" x2="320" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/><line x1="480" y1="0" x2="480" y2="520"/>
+    <line x1="880" y1="0" x2="880" y2="520"/><line x1="960" y1="0" x2="960" y2="520"/>
+    <line x1="1280" y1="0" x2="1280" y2="520"/><line x1="1360" y1="0" x2="1360" y2="520"/>
+    <line x1="1440" y1="0" x2="1440" y2="520"/><line x1="1520" y1="0" x2="1520" y2="520"/>
+  </g>
+
+  <!-- Wood Wainscoting lower wall -->
+  <rect x="0" y="510" width="1600" height="135" fill="#24160c" stroke="#422a17" stroke-width="4"/>
+  <!-- Floor -->
+  <rect x="0" y="640" width="1600" height="260" fill="url(#floorGrad)"/>
+  <!-- Perspective floorboard lines -->
+  <g stroke="#140b05" stroke-width="3" opacity="0.7">
+    <line x1="150" y1="640" x2="20" y2="900"/>
+    <line x1="380" y1="640" x2="280" y2="900"/>
+    <line x1="620" y1="640" x2="560" y2="900"/>
+    <line x1="820" y1="640" x2="820" y2="900"/>
+    <line x1="1040" y1="640" x2="1120" y2="900"/>
+    <line x1="1280" y1="640" x2="1420" y2="900"/>
+  </g>
+  <!-- Persian Detective Rug under desk -->
+  <ellipse cx="820" cy="775" rx="480" ry="88" fill="#4f1d16" stroke="#c99b3b" stroke-width="4" opacity="0.85"/>
+  <ellipse cx="820" cy="775" rx="430" ry="68" fill="none" stroke="#8f3929" stroke-width="3" stroke-dasharray="12,8"/>
+
+  <!-- ================= HOTSPOT 11: MOONLIT VENETIAN WINDOW (left:62%, top:2%, w:15%, h:38% => x:992..1232, y:18..360) ================= -->
+  <g id="window-group">
+    <!-- Outer Window Frame -->
+    <rect x="992" y="20" width="240" height="340" rx="6" fill="#0d1b2a" stroke="#472d18" stroke-width="10"/>
+    <!-- Night Sky & Moon -->
+    <circle cx="1170" cy="85" r="28" fill="#fef08a" opacity="0.85" filter="url(#softGlow)"/>
+    <!-- 1930s Noir City Skyline Silhouette -->
+    <path d="M1000 350 L1000 220 L1035 220 L1035 170 L1075 170 L1075 240 L1105 240 L1105 145 L1130 130 L1155 145 L1155 210 L1190 210 L1190 180 L1225 180 L1225 350 Z" fill="#070d17"/>
+    <!-- Tiny lit city windows -->
+    <g fill="#facc15" opacity="0.65">
+      <rect x="1045" y="185" width="6" height="8"/><rect x="1058" y="185" width="6" height="8"/>
+      <rect x="1045" y="202" width="6" height="8"/><rect x="1115" y="160" width="6" height="10"/>
+      <rect x="1132" y="160" width="6" height="10"/><rect x="1115" y="180" width="6" height="10"/>
+      <rect x="1168" y="225" width="8" height="8"/><rect x="1200" y="195" width="7" height="9"/>
+    </g>
+    <!-- Venetian Blinds Slats -->
+    <g stroke="#291a0e" stroke-width="5" opacity="0.82">
+      <line x1="998" y1="45" x2="1226" y2="45"/><line x1="998" y1="68" x2="1226" y2="68"/>
+      <line x1="998" y1="91" x2="1226" y2="91"/><line x1="998" y1="114" x2="1226" y2="114"/>
+      <line x1="998" y1="137" x2="1226" y2="137"/><line x1="998" y1="160" x2="1226" y2="160"/>
+      <line x1="998" y1="183" x2="1226" y2="183"/><line x1="998" y1="206" x2="1226" y2="206"/>
+      <line x1="998" y1="229" x2="1226" y2="229"/><line x1="998" y1="252" x2="1226" y2="252"/>
+      <line x1="998" y1="275" x2="1226" y2="275"/><line x1="998" y1="298" x2="1226" y2="298"/>
+      <line x1="998" y1="321" x2="1226" y2="321"/>
+    </g>
+    <!-- Moonbeam ray across office -->
+    <polygon points="998,350 1226,350 1350,680 890,680" fill="url(#moonBeam)"/>
+  </g>
+
+  <!-- ================= HOTSPOT 9: EXIT DOOR (left:2%, top:14%, w:12%, h:58% => x:32..224, y:126..648) ================= -->
+  <g id="exit-door">
+    <!-- Door Frame -->
+    <rect x="30" y="122" width="194" height="525" fill="#29170b" stroke="#59381f" stroke-width="6"/>
+    <!-- Inner Oak Door -->
+    <rect x="42" y="134" width="170" height="505" fill="url(#woodDark)" stroke="#1a0f07" stroke-width="4"/>
+    <!-- Frosted Fluted Glass Upper Window -->
+    <rect x="62" y="160" width="130" height="175" rx="4" fill="#6b7c85" fill-opacity="0.45" stroke="#c99b3b" stroke-width="3"/>
+    <text x="127" y="225" text-anchor="middle" fill="#f5ebd7" font-family="Georgia, serif" font-size="14" font-weight="bold" letter-spacing="1">PRIVATE</text>
+    <text x="127" y="248" text-anchor="middle" fill="#e6ccb2" font-family="Georgia, serif" font-size="11" font-weight="bold">J.H. WHITMORE</text>
+    <text x="127" y="268" text-anchor="middle" fill="#d4af37" font-family="Courier, monospace" font-size="10">DETECTIVE AGENCY</text>
+    <!-- Lower Wood Panels -->
+    <rect x="62" y="360" width="130" height="110" fill="#26160a" stroke="#4f311a" stroke-width="3"/>
+    <rect x="62" y="490" width="130" height="120" fill="#26160a" stroke="#4f311a" stroke-width="3"/>
+    <!-- Heavy Brass Electro-Mechanical Deadbolt Lock -->
+    <rect x="176" y="385" width="32" height="68" rx="4" fill="url(#brassGrad)" stroke="#1a0f07" stroke-width="3"/>
+    <circle cx="192" cy="408" r="7" fill="#dc2626" filter="url(#softGlow)"/>
+    <circle cx="192" cy="432" r="6" fill="#1a0f07"/>
+    <rect x="190" y="432" width="4" height="12" fill="#1a0f07"/>
+  </g>
+
+  <!-- ================= HOTSPOT 10: COAT RACK (left:13%, top:17%, w:8%, h:35% => x:208..336, y:153..468) ================= -->
+  <g id="coat-rack">
+    <!-- Brass Pole & Base -->
+    <line x1="272" y1="165" x2="272" y2="520" stroke="url(#brassGrad)" stroke-width="8"/>
+    <path d="M240 520 Q272 490 304 520" fill="none" stroke="url(#brassGrad)" stroke-width="7"/>
+    <path d="M242 185 Q272 160 302 185" fill="none" stroke="url(#brassGrad)" stroke-width="5"/>
+    <!-- Fedora Hat on top -->
+    <ellipse cx="272" cy="172" rx="36" ry="9" fill="#5c4028" stroke="#1a0f07" stroke-width="3"/>
+    <path d="M248 170 Q272 138 296 170 Z" fill="#704f32" stroke="#1a0f07" stroke-width="3"/>
+    <rect x="250" y="162" width="44" height="6" fill="#2b1b10"/>
+    <!-- Hanging Detective Trench Coat -->
+    <path d="M246 195 L298 195 L312 435 L232 435 Z" fill="#856544" stroke="#24160c" stroke-width="3"/>
+    <path d="M256 195 L272 245 L288 195" fill="none" stroke="#3b2614" stroke-width="3"/>
+    <!-- Coat Pocket with Glinting Brass Key -->
+    <rect x="276" y="330" width="26" height="28" fill="#6e5034" stroke="#24160c" stroke-width="2"/>
+    <circle cx="290" cy="324" r="6" fill="#facc15" stroke="#785616" stroke-width="2" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- ================= HOTSPOT 2: WALL MOTTO POSTER (left:19%, top:7%, w:7%, h:18% => x:304..416, y:63..225) ================= -->
+  <g id="motto-poster">
+    <!-- Hanging wire -->
+    <polyline points="330,68 360,50 390,68" fill="none" stroke="#8c6747" stroke-width="2"/>
+    <!-- Ornate Gold Frame -->
+    <rect x="304" y="66" width="112" height="154" rx="4" fill="#2b1b0e" stroke="url(#brassGrad)" stroke-width="7"/>
+    <rect x="313" y="75" width="94" height="136" fill="#f3e5ab" stroke="#8c6747" stroke-width="2"/>
+    <text x="360" y="98" text-anchor="middle" fill="#7a2014" font-family="Georgia, serif" font-size="10" font-weight="bold">MOTTO</text>
+    <line x1="325" y1="104" x2="395" y2="104" stroke="#8c6747" stroke-width="1.5"/>
+    <text x="360" y="126" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="13" font-weight="bold">“TRUTH</text>
+    <text x="360" y="146" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="13" font-weight="bold">ALWAYS</text>
+    <text x="360" y="166" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="13" font-weight="bold">FINDS</text>
+    <text x="360" y="186" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="13" font-weight="bold">A WAY”</text>
+  </g>
+
+  <!-- ================= WALL CLOCK AT 10:00 (x:436..512, y:75..155) ================= -->
+  <g id="wall-clock">
+    <circle cx="474" cy="120" r="38" fill="#f5ebd7" stroke="url(#brassGrad)" stroke-width="7"/>
+    <circle cx="474" cy="120" r="31" fill="none" stroke="#3b2614" stroke-width="1.5"/>
+    <text x="474" y="98" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="10" font-weight="bold">12</text>
+    <text x="499" y="124" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="10" font-weight="bold">3</text>
+    <text x="474" y="148" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="10" font-weight="bold">6</text>
+    <text x="449" y="124" text-anchor="middle" fill="#1f130b" font-family="Georgia, serif" font-size="10" font-weight="bold">9</text>
+    <text x="455" y="106" text-anchor="middle" fill="#b91c1c" font-family="monospace" font-size="10" font-weight="bold">10</text>
+    <!-- Hands pointing strictly to 10:00 -->
+    <line x1="474" y1="120" x2="456" y2="108" stroke="#b91c1c" stroke-width="4" stroke-linecap="round"/>
+    <line x1="474" y1="120" x2="474" y2="94" stroke="#1f130b" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="474" cy="120" r="4" fill="#7a2014"/>
+  </g>
+
+  <!-- ================= HOTSPOT 3: MAHOGANY BOOKSHELF (left:33%, top:3%, w:18%, h:48% => x:528..816, y:27..459) ================= -->
+  <g id="bookshelf">
+    <rect x="528" y="30" width="288" height="430" rx="4" fill="#2b180b" stroke="#59371d" stroke-width="8"/>
+    <!-- Pediment top -->
+    <polygon points="520,30 672,6 824,30" fill="#3d2310" stroke="#6e4526" stroke-width="4"/>
+    <!-- 3 Shelves -->
+    <rect x="536" y="45" width="272" height="125" fill="#1a0e06"/>
+    <rect x="536" y="182" width="272" height="125" fill="#1a0e06"/>
+    <rect x="536" y="319" width="272" height="125" fill="#1a0e06"/>
+    <!-- Shelf Row 1: The 6 Secret Lever Books -->
+    <rect x="550" y="65" width="34" height="104" fill="#7a2e22" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="588" y="75" width="32" height="94" fill="#2d4b3d" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="624" y="58" width="36" height="111" fill="#2f3b59" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="664" y="80" width="30" height="89" fill="#5a4628" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="698" y="66" width="35" height="103" fill="#6a3857" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="737" y="70" width="34" height="99" fill="#3a505b" stroke="#d4af37" stroke-width="1.5"/>
+    <!-- Shelf Row 2 Books -->
+    <rect x="548" y="205" width="28" height="100" fill="#5c2c16"/><rect x="580" y="212" width="32" height="93" fill="#3b4d28"/>
+    <rect x="615" y="198" width="26" height="107" fill="#6b211b"/><rect x="645" y="208" width="38" height="97" fill="#3d3522"/>
+    <rect x="690" y="200" width="30" height="105" fill="#2b3a4a"/><rect x="725" y="215" width="60" height="90" fill="#4f2d18"/>
+    <!-- Shelf Row 3 Case Files & Globe -->
+    <rect x="550" y="345" width="75" height="95" fill="#4a3520" stroke="#8c6747" stroke-width="2"/>
+    <rect x="635" y="345" width="75" height="95" fill="#4a3520" stroke="#8c6747" stroke-width="2"/>
+    <circle cx="760" cy="390" r="32" fill="#597a6b" stroke="#c99b3b" stroke-width="4"/>
+  </g>
+
+  <!-- ================= OAK DETECTIVE DESK (center) ================= -->
+  <g id="detective-desk">
+    <!-- Warm Lamp Glow Aura -->
+    <circle cx="660" cy="440" r="240" fill="url(#lampGlow)"/>
+    <!-- Desk Top Surface -->
+    <polygon points="540,485 1040,485 1100,565 480,565" fill="url(#woodDesk)" stroke="#241409" stroke-width="5"/>
+    <!-- Desk Front Body -->
+    <rect x="495" y="565" width="590" height="225" fill="url(#woodDark)" stroke="#1a0e06" stroke-width="5"/>
+    <!-- Center Kneehole -->
+    <rect x="685" y="615" width="210" height="175" fill="#120a04" stroke="#2e1a0c" stroke-width="3"/>
+    <!-- Left Drawers (1, 2, 3) -->
+    <rect x="515" y="580" width="150" height="55" fill="#3b2312" stroke="#5e3b1f" stroke-width="2"/>
+    <rect x="515" y="645" width="150" height="55" fill="#3b2312" stroke="#5e3b1f" stroke-width="2"/>
+    <rect x="515" y="710" width="150" height="60" fill="#3b2312" stroke="#5e3b1f" stroke-width="2"/>
+    <!-- Right Drawers (including Drawer #4 highlighted with brass plate!) -->
+    <rect x="915" y="580" width="150" height="62" fill="#4a2c17" stroke="#d4af37" stroke-width="2.5"/>
+    <rect x="962" y="596" width="56" height="26" rx="3" fill="url(#brassGrad)" stroke="#1a0e06" stroke-width="1.5"/>
+    <text x="990" y="614" text-anchor="middle" fill="#1a0e06" font-family="Courier, monospace" font-size="14" font-weight="bold">NO. 4</text>
+    <rect x="915" y="652" width="150" height="55" fill="#3b2312" stroke="#5e3b1f" stroke-width="2"/>
+    <rect x="915" y="717" width="150" height="55" fill="#3b2312" stroke="#5e3b1f" stroke-width="2"/>
+  </g>
+
+  <!-- ================= HOTSPOT 4: GREEN BANKER'S LAMP (left:38%, top:41%, w:6%, h:12% => x:608..704, y:369..477) ================= -->
+  <g id="bankers-lamp">
+    <!-- Brass Base & Stem -->
+    <ellipse cx="656" cy="480" rx="34" ry="10" fill="url(#brassGrad)" stroke="#241409" stroke-width="2.5"/>
+    <path d="M656 480 L656 408 Q656 385 672 385" fill="none" stroke="url(#brassGrad)" stroke-width="7"/>
+    <!-- Emerald Green Glass Shade -->
+    <path d="M616 415 Q656 368 696 415 Z" fill="#10b981" stroke="#065f46" stroke-width="4" filter="url(#softGlow)"/>
+    <!-- Pull chain -->
+    <line x1="672" y1="415" x2="672" y2="442" stroke="#facc15" stroke-width="2" stroke-dasharray="3,2"/>
+    <circle cx="672" cy="445" r="4" fill="#facc15"/>
+  </g>
+
+  <!-- ================= HOTSPOT 5: UNDERWOOD 1931 TYPEWRITER (left:44%, top:43%, w:10%, h:12% => x:704..864, y:387..495) ================= -->
+  <g id="typewriter">
+    <!-- Paper sheet sticking up -->
+    <rect x="748" y="385" width="72" height="58" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <line x1="758" y1="400" x2="810" y2="400" stroke="#78350f" stroke-width="2"/>
+    <line x1="758" y1="410" x2="805" y2="410" stroke="#78350f" stroke-width="2"/>
+    <line x1="758" y1="420" x2="798" y2="420" stroke="#b91c1c" stroke-width="2"/>
+    <!-- Platen roller -->
+    <rect x="722" y="425" width="124" height="14" rx="5" fill="#374151" stroke="#111827" stroke-width="2"/>
+    <!-- Typewriter chassis -->
+    <path d="M726 438 L842 438 L856 492 L712 492 Z" fill="#1f2937" stroke="#0f172a" stroke-width="3"/>
+    <text x="784" y="456" text-anchor="middle" fill="#d4af37" font-family="Georgia, serif" font-size="9" font-weight="bold">UNDERWOOD 1931</text>
+    <!-- Round vintage keys -->
+    <g fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5">
+      <circle cx="738" cy="472" r="4.5"/><circle cx="753" cy="472" r="4.5"/><circle cx="768" cy="472" r="4.5"/>
+      <circle cx="783" cy="472" r="4.5"/><circle cx="798" cy="472" r="4.5"/><circle cx="813" cy="472" r="4.5"/><circle cx="828" cy="472" r="4.5"/>
+      <circle cx="745" cy="483" r="4.5"/><circle cx="760" cy="483" r="4.5"/><circle cx="775" cy="483" r="4.5"/>
+      <circle cx="790" cy="483" r="4.5"/><circle cx="805" cy="483" r="4.5"/><circle cx="820" cy="483" r="4.5"/>
+    </g>
+  </g>
+
+  <!-- ================= HOTSPOT 6: GLOWING BRASS PUZZLE BOX (left:53%, top:52%, w:6%, h:11% => x:848..944, y:468..567) ================= -->
+  <g id="puzzle-box" filter="url(#softGlow)">
+    <polygon points="854,492 938,492 946,554 846,554" fill="url(#brassGrad)" stroke="#452b09" stroke-width="3"/>
+    <polygon points="862,474 930,474 938,492 854,492" fill="#facc15" stroke="#785616" stroke-width="2.5"/>
+    <!-- 4 Esoteric Dials -->
+    <circle cx="868" cy="522" r="10" fill="#26170b" stroke="#fef08a" stroke-width="2"/>
+    <text x="868" y="526" text-anchor="middle" fill="#fef08a" font-size="11">★</text>
+    <circle cx="888" cy="522" r="10" fill="#26170b" stroke="#fef08a" stroke-width="2"/>
+    <text x="888" y="526" text-anchor="middle" fill="#fef08a" font-size="11">☾</text>
+    <circle cx="908" cy="522" r="10" fill="#26170b" stroke="#fef08a" stroke-width="2"/>
+    <text x="908" y="526" text-anchor="middle" fill="#fef08a" font-size="11">👁</text>
+    <circle cx="928" cy="522" r="10" fill="#26170b" stroke="#fef08a" stroke-width="2"/>
+    <text x="928" y="526" text-anchor="middle" fill="#fef08a" font-size="11">▲</text>
+  </g>
+
+  <!-- ================= HOTSPOT 7: HEAVY WALL SAFE (right:12%, top:10%, w:10%, h:24% => x:1248..1408, y:90..306) ================= -->
+  <g id="wall-safe">
+    <!-- Outer Steel Frame -->
+    <rect x="1248" y="90" width="160" height="216" rx="8" fill="url(#steelGrad)" stroke="#111315" stroke-width="6"/>
+    <!-- Inner Vault Door -->
+    <rect x="1262" y="104" width="132" height="188" rx="4" fill="#262a2c" stroke="#646d73" stroke-width="3"/>
+    <!-- Corner Rivets -->
+    <g fill="#9ca3af">
+      <circle cx="1272" cy="114" r="4"/><circle cx="1384" cy="114" r="4"/>
+      <circle cx="1272" cy="282" r="4"/><circle cx="1384" cy="282" r="4"/>
+    </g>
+    <text x="1328" y="132" text-anchor="middle" fill="#d4af37" font-family="Courier, monospace" font-size="11" font-weight="bold">WHITMORE VAULT</text>
+    <!-- Combination Dial -->
+    <circle cx="1316" cy="198" r="36" fill="#111315" stroke="url(#brassGrad)" stroke-width="5"/>
+    <circle cx="1316" cy="198" r="16" fill="url(#brassGrad)"/>
+    <!-- Three-spoke Vault Handle -->
+    <circle cx="1368" cy="198" r="8" fill="url(#brassGrad)"/>
+    <line x1="1368" y1="198" x2="1368" y2="174" stroke="url(#brassGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1368" y1="198" x2="1384" y2="214" stroke="url(#brassGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1368" y1="198" x2="1352" y2="214" stroke="url(#brassGrad)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= HOTSPOT 8: SEPTEMBER 1931 CALENDAR (right:6%, top:30%, w:6%, h:16% => x:1408..1504, y:270..414) ================= -->
+  <g id="wall-calendar">
+    <!-- Hanging pin -->
+    <circle cx="1456" cy="272" r="5" fill="#dc2626"/>
+    <rect x="1410" y="276" width="92" height="134" rx="3" fill="#fcf8ed" stroke="#78573a" stroke-width="3"/>
+    <rect x="1410" y="276" width="92" height="30" fill="#991b1b"/>
+    <text x="1456" y="296" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="12" font-weight="bold">SEPT 1931</text>
+    <!-- Red circled 28 -->
+    <circle cx="1456" cy="356" r="26" fill="#fef2f2" stroke="#dc2626" stroke-width="4"/>
+    <text x="1456" y="366" text-anchor="middle" fill="#b91c1c" font-family="Courier, monospace" font-size="28" font-weight="bold">28</text>
+  </g>
+
+  <!-- ================= HOTSPOT 1: INSPECTOR FELIX CLAWS (left:11%, bottom:22%, w:10%, h:26% => x:176..336, y:468..702) ================= -->
+  <g id="detective-cat">
+    <!-- Shadow -->
+    <ellipse cx="256" cy="696" rx="56" ry="14" fill="#000000" opacity="0.6"/>
+    <!-- Trench Coat Body -->
+    <path d="M210 560 L302 560 L318 690 L194 690 Z" fill="#c29b61" stroke="#1c1108" stroke-width="4"/>
+    <!-- Coat Lapels & Belt -->
+    <path d="M232 560 L256 610 L280 560" fill="#7a2014" stroke="#1c1108" stroke-width="3"/>
+    <rect x="202" y="625" width="108" height="14" fill="#8c6747" stroke="#1c1108" stroke-width="3"/>
+    <rect x="246" y="622" width="20" height="20" fill="none" stroke="#facc15" stroke-width="3"/>
+    <!-- Cat Head (1930s Rubber Hose Black & Cream Tuxedo Cat) -->
+    <polygon points="214,510 222,468 246,496" fill="#1c1917" stroke="#000" stroke-width="3"/>
+    <polygon points="298,510 290,468 266,496" fill="#1c1917" stroke="#000" stroke-width="3"/>
+    <ellipse cx="256" cy="526" rx="44" ry="36" fill="#1c1917" stroke="#000" stroke-width="4"/>
+    <!-- Cream Muzzle & Whiskers -->
+    <ellipse cx="256" cy="538" rx="30" ry="20" fill="#f5ebd7"/>
+    <!-- Pie-cut 1930s Cartoon Eyes -->
+    <ellipse cx="240" cy="516" rx="9" ry="12" fill="#f5ebd7"/>
+    <ellipse cx="242" cy="516" rx="5" ry="8" fill="#000"/>
+    <ellipse cx="272" cy="516" rx="9" ry="12" fill="#f5ebd7"/>
+    <ellipse cx="270" cy="516" rx="5" ry="8" fill="#000"/>
+    <!-- Nose & Smile -->
+    <polygon points="251,530 261,530 256,537" fill="#dc2626"/>
+    <path d="M242 544 Q256 554 270 544" fill="none" stroke="#1c1917" stroke-width="3" stroke-linecap="round"/>
+    <!-- Whiskers -->
+    <line x1="200" y1="532" x2="228" y2="536" stroke="#f5ebd7" stroke-width="2.5"/>
+    <line x1="198" y1="542" x2="228" y2="542" stroke="#f5ebd7" stroke-width="2.5"/>
+    <line x1="312" y1="532" x2="284" y2="536" stroke="#f5ebd7" stroke-width="2.5"/>
+    <line x1="314" y1="542" x2="284" y2="542" stroke="#f5ebd7" stroke-width="2.5"/>
+    <!-- Detective Fedora Hat -->
+    <ellipse cx="256" cy="492" rx="54" ry="12" fill="#5c4028" stroke="#1c1108" stroke-width="3.5"/>
+    <path d="M220 490 Q256 448 292 490 Z" fill="#785332" stroke="#1c1108" stroke-width="3.5"/>
+    <rect x="223" y="480" width="66" height="8" fill="#7a2014"/>
+    <!-- Glowing Magnifying Glass in right paw -->
+    <line x1="305" y1="600" x2="328" y2="572" stroke="#785616" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="338" cy="558" r="18" fill="#fef08a" fill-opacity="0.45" stroke="url(#brassGrad)" stroke-width="5" filter="url(#softGlow)"/>
+  </g>
+</svg>

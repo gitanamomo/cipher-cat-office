@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#26180d"/>
+  <circle cx="150" cy="150" r="132" fill="#3b2615" stroke="#d4af37" stroke-width="6"/>
+  <!-- Trench Coat Shoulders -->
+  <path d="M55 285 Q150 220 245 285 Z" fill="#c29b61" stroke="#1c1108" stroke-width="5"/>
+  <path d="M115 245 L150 285 L185 245" fill="#7a2014" stroke="#1c1108" stroke-width="4"/>
+  <!-- Cat Ears -->
+  <polygon points="82,135 95,68 135,112" fill="#1c1917" stroke="#000" stroke-width="5"/>
+  <polygon points="218,135 205,68 165,112" fill="#1c1917" stroke="#000" stroke-width="5"/>
+  <!-- Cat Head -->
+  <ellipse cx="150" cy="165" rx="68" ry="56" fill="#1c1917" stroke="#000" stroke-width="5"/>
+  <!-- Cream Muzzle -->
+  <ellipse cx="150" cy="184" rx="46" ry="30" fill="#f5ebd7"/>
+  <!-- 1930s Pie-cut Cartoon Eyes -->
+  <ellipse cx="125" cy="150" rx="14" ry="18" fill="#f5ebd7"/>
+  <ellipse cx="128" cy="150" rx="8" ry="12" fill="#000"/>
+  <ellipse cx="175" cy="150" rx="14" ry="18" fill="#f5ebd7"/>
+  <ellipse cx="172" cy="150" rx="8" ry="12" fill="#000"/>
+  <!-- Nose & Confident Detective Smile -->
+  <polygon points="142,172 158,172 150,183" fill="#dc2626"/>
+  <path d="M128 192 Q150 208 172 192" fill="none" stroke="#1c1917" stroke-width="4" stroke-linecap="round"/>
+  <!-- Whiskers -->
+  <line x1="65" y1="176" x2="108" y2="182" stroke="#f5ebd7" stroke-width="3.5"/>
+  <line x1="62" y1="190" x2="108" y2="190" stroke="#f5ebd7" stroke-width="3.5"/>
+  <line x1="235" y1="176" x2="192" y2="182" stroke="#f5ebd7" stroke-width="3.5"/>
+  <line x1="238" y1="190" x2="192" y2="190" stroke="#f5ebd7" stroke-width="3.5"/>
+  <!-- Detective Fedora Hat -->
+  <ellipse cx="150" cy="108" rx="82" ry="18" fill="#5c4028" stroke="#1c1108" stroke-width="5"/>
+  <path d="M92 105 Q150 42 208 105 Z" fill="#785332" stroke="#1c1108" stroke-width="5"/>
+  <rect x="98" y="92" width="104" height="12" fill="#7a2014"/>
+</svg>
